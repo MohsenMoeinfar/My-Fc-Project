@@ -1,0 +1,128 @@
+define :zoom do
+  sample :glitch_perc1
+  sleep 0.5
+  play 82
+  sleep 0.5
+  play 43
+  sleep 0.5
+  sample :perc_impact1
+  sleep 0.5
+  play 45
+  sample :ambi_choir
+  sleep 0.5
+  play 72
+  sleep 0.5
+  sample :glitch_perc1
+  sleep 0.5
+  play 82
+  sleep 0.5
+  play 43
+  sleep 0.5
+  sample :perc_impact1
+  sleep 0.5
+  play 45
+  sample :glitch_perc1
+  sleep 0.5
+  play 82
+  sleep 0.5
+  play 43
+  sleep 0.5
+  sample :perc_impact1
+  sleep 0.5
+  play 45
+  sample :ambi_choir
+  sleep 0.5
+  play 72
+  sleep 0.5
+  sample :glitch_perc1
+  sleep 0.5
+  play 82
+  sleep 0.5
+  play 43
+end
+define :rotate do
+  sample :vinyl_hiss , rate: 1
+  sleep 0.5
+  play 43, amp: 2
+  sample :vinyl_scratch, rate: 1
+  sleep 0.5
+  play 43, amp: 2
+  sleep 0.5
+  play 43, amp: 2
+  sample :vinyl_hiss , rate: 1
+  sleep 0.5
+  play 43, amp: 2
+  sleep 0.5
+  play 43, amp: 2
+  sample :vinyl_hiss , rate: 1
+  sleep 0.5
+  play 43, amp: 2
+end
+define :changecenter do
+  sample :perc_bell2 , rate: 1
+  sleep 0.5
+  play 27, amp: 1
+  sample :sn_dub, rate: 1
+  sleep 0.5
+  play 23, amp: 0.5
+  sleep 0.5
+  play 53, amp: 1
+  sample :sn_generic , rate: 1
+  sleep 0.5
+  play 93, amp: 0.25
+  sleep 0.5
+  play 33, amp: 2
+  sample :sn_dub , rate: 1.5
+  sleep 0.5
+  play 43, amp: 2
+  sample :perc_bell2 , rate: 0.5
+  sleep 0.5
+  play 27, amp: 1
+  sample :sn_dub, rate: 1
+  sleep 0.5
+  play 23, amp: 0.5
+  sleep 0.5
+  play 53, amp: 1
+  sample :sn_generic , rate: 0.5
+  sleep 0.5
+  play 93, amp: 0.25
+  sleep 0.5
+  play 33, amp: 2
+  sample :sn_dub , rate: 0.5
+  sleep 0.5
+  play 43, amp: 0.5
+  sleep 0.5
+  play 53, amp: 1
+  sleep 0.5
+  play 63, amp: 1.5
+  sleep 0.5
+  sample :glitch_perc4 , rate: 0.5
+  sleep 0.5
+  
+end
+define :hold do
+  sample :ambi_drone , rate: 1
+  sleep 1
+  sample :ambi_drone , rate: 0.5
+  
+  
+end
+zoom
+sleep 2
+changecenter
+sleep 2
+rotate
+sleep 7
+hold
+sleep 7
+zoom
+sleep 2
+rotate
+sleep 7
+hold
+sleep 7
+rotate
+sleep 7
+changecenter
+
+
